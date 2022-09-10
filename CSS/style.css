@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,700&display=swap');
+
+/* || CSS Reset begins */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* || CSS Reset ends */
+
+/* || VARIABLES */
+
+:root {
+  /* || FONT VARIABLES */
+
+  --FONT-FAMILY: 'Nunito', sans-serif;
+  --FONT-FAMILY-HEADINGS: Tahoma, sans-serif, Georgia;
+  --FONT-SIZE: 3rem;
+  --FONT-SIZE-QUOTES: 1.2rem;
+
+  /* || COLOR VARIABLES */
+
+  --BODY-BG-COLOR: white;
+  --HEADING-COLOR: black;
+  --TEXT-COLOR: brown;
+  --QUOTES-COLOR: grey;
+
+}
+
+
+/* || DARK MODE */
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --BODY-BG-COLOR: hsl(0, 0%, 20%);
+    --HEADING-COLOR: aliceblue;
+    --TEXT-COLOR: white;
+  }
+}
+
+/* || Utility classes */
+
+.offscreen {
+  position: absolute;
+  left: -10000px;
+}
+
+.center {
+  text-align: center;
+}
+
+/* || General styles */
+
+html {
+  font-size: var(--FONT-SIZE);
+  font-family: var(--FONT-FAMILY);
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+
+  background-color: var(--BODY-BG-COLOR);
+  color: var(--TEXT-COLOR);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-family: var(--FONT-FAMILY-HEADINGS);
+  color: var(--HEADING-COLOR);
+}
+
+/* || Specific styles */
+
+p:nth-child(2) {
+  padding: 0.3em 0.25em 0;
+  margin-top: 0.5em;
+}
+
+p:last-child {
+  margin-bottom: 0.8em;
+}
+
+p:nth-child(2)::before {
+  content: open-quote;
+  font-family: Georgia, serif;
+  font-size: var(--FONT-SIZE-QUOTES);
+  color: var(--QUOTES-COLOR);
+  margin-right: 0.1em;
+}
+
+p:nth-child(2)::after {
+  content: close-quote;
+  font-family: Georgia, serif;
+  font-size: var(--FONT-SIZE-QUOTES);
+  color: var(--QUOTES-COLOR);
+  margin-left: 0.1em;
+}
