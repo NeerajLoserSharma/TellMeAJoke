@@ -1,6 +1,6 @@
 // JS that displays a random joke every time the site is loaded.
 
-jokes = ["My uncle named his dogs 'Timex' and 'Rolex'. They're his watch dogs.",
+const jokes = ["My uncle named his dogs 'Timex' and 'Rolex'. They're his watch dogs.",
   "Did you hear about the guy whose left side was cut off? He's all right now.",
   "How do you open a banana? With a mon-key.",
   "Which is faster, hot or cold? Hot, because you can catch cold.",
