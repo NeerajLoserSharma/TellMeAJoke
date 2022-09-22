@@ -19,6 +19,7 @@
 
   --FONT-FAMILY: 'Nunito', sans-serif;
   --FONT-FAMILY-HEADINGS: Tahoma, sans-serif, Georgia;
+  --FONT-FAMILY-QUOTES: Georgia, serif;
   --FONT-SIZE: 3rem;
   --FONT-SIZE-QUOTES: 1.2rem;
 
@@ -91,7 +92,7 @@ p:last-child {
 
 p:nth-child(2)::before {
   content: open-quote;
-  font-family: Georgia, serif;
+  font-family: var(--FONT-FAMILY-QUOTES);
   font-size: var(--FONT-SIZE-QUOTES);
   color: var(--QUOTES-COLOR);
   margin-right: 0.1em;
@@ -99,7 +100,7 @@ p:nth-child(2)::before {
 
 p:nth-child(2)::after {
   content: close-quote;
-  font-family: Georgia, serif;
+  font-family: var(--FONT-FAMILY-QUOTES);
   font-size: var(--FONT-SIZE-QUOTES);
   color: var(--QUOTES-COLOR);
   margin-left: 0.1em;
