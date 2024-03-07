@@ -3,7 +3,7 @@
 ### [Live Site](https://neerajlosersharma.github.io/TellMeAJoke/)
 
 &nbsp;
-![Screenshot of the project displaying a sample joke](https://i.imgur.com/Iwjphs8.png)
+![Screenshot of the project displaying a sample joke](https://i.imgur.com/4vki9ys.png)
 
 This project is actually just a [responsive website](https://en.wikipedia.org/wiki/Responsive_web_design) which displays a different joke every time the site is loaded.
 
